@@ -41,13 +41,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v5N-yk-Adf">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="QEe-tc-VCi" kind="embed" identifier="pvcSegue" id="Zwt-wu-Hqv"/>
-                                </connections>
-                            </containerView>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="xn2-JE-DxK">
                                 <rect key="frame" x="116" y="785" width="158" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -57,6 +50,13 @@
                                     <action selector="SelectPageController:" destination="DjR-1U-1iA" eventType="valueChanged" id="Dxn-16-e9Q"/>
                                 </connections>
                             </pageControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v5N-yk-Adf">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="1049"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="QEe-tc-VCi" kind="embed" identifier="pvcSegue" id="Zwt-wu-Hqv"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="is4-wS-m3S"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

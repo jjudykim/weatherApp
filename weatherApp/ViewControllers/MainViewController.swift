@@ -24,7 +24,7 @@ class MainViewController: UIViewController {
             
             print("first Load")
             
-            UserDefaults.standard.set(false, forKey: "launchedBefore")
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
         }
     }
 }
